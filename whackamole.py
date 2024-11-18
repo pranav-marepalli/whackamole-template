@@ -1,5 +1,6 @@
 import pygame
 import random
+import time 
 
 
 def main():
@@ -29,6 +30,8 @@ def main():
                 if event.pos==(x,y) or event.pos<=(x+32,y+32) or event.pos>=(x-32,y-32):
                     x=32*random.randrange(0,20)
                     y=32*random.randrange(0,16)
+                    time.sleep(0.1)
+                    
 
             pygame.display.flip()
             clock.tick(60)
